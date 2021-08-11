@@ -1,0 +1,7 @@
+<h1>It needs to be modify</h1>
+<%= simple_form_for @restaurant do |f| %>
+  <%= f.input :name %>
+  <%= f.input :address %>
+  <%= f.input :category %>
+  <%= f.submit "Modify", class: "btn btn-primary", data: {confirm: "Are you sur of your modifications"}%>
+<% end %>

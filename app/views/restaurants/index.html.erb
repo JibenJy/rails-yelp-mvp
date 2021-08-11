@@ -1,0 +1,9 @@
+<h1>Welcolme To The Index Of</h1>
+
+<ul>
+    <% @restaurants.each do |restau| %>
+        <li><%= link_to restau.name, restaurant_path(restau)  %></li>
+    <% end %>
+</ul>
+
+<p><%= link_to "New", new_restaurant_path %></p>
